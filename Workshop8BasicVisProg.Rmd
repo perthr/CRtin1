@@ -1,0 +1,90 @@
+---
+title: "Workshop 8 - Introduction, Basics and Visual Analytics with R"
+author: "Greg White - Student ID 19245678"
+output: html_document
+---
+
+```{r setup, include=FALSE} #This bit of code is separated by the ```{r} [code here] ```
+knitr::opts_chunk$set(echo = TRUE) #This sets global options to show code for all code chunks in this document
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars) #this summarizes data and the output you get depends on the class of the input. Cars is a dataframe.
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+#Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Why Use R Markdowns
+
+**1. As a teaching tool**
+RMarkdown is explained at line 13 above, it's power as a learning tool is that you can edit text by writing it into the document and saving it, but also include R code that can be run piece-by-piece or all at once when you process the file and create the output by clicking on the "Knit" button.
+**2. For different uses of your output file**
+Output files from RMarkdown can be HTML, Word Doc, PDF formats and templates for many other types of documents are common, for example, GitHub output files or Presentations.
+**3. For research or self-education**
+You can use an RMarkdown document as your data analytics diary. Imagine that moment when your writing the paper from the data you collected 12 months ago and analyzed in June (now it's January the following year). As your about to submit the paper your research colleagues in Edinburgh ask about your methodology for the correlations, data cleaning and factor analysis? With R Markdown: You open your R Project file for that paper, open the .Rmd file you saved for the analysis and click "Knit", save the output in Word format sending it by email to your collaborators. If you're an organized person you may have no problem looking in your diary to find your detailed notes about the statistical process, if you don't have them or can't find.
+
+
+## Required for Workshop 8
+
+This RMarkdown document is saved and ready for you to use in RStudio Cloud. There are a couple of other files in the "Rmd" folder of this Workshop 8 project: "GithubOutputTemplate.Rmd" is an example template format for use if you want to output your RMarkdown document to GitHub; "DplyrTutorialExamples.Rmd" is an excellent Rmarkdown tutorial you can Fork from GitHub at: https://gist.github.com/dgrapov/18b1a50216fda9ccfec9.
+
+You are already logged into RStudio Cloud and should now do Visualization Basics and Programming Basics Primers.
+
+
+### The Basics: Visualization Basics
+
+<!--Use this heading to record notes and code chunks while you run through doing the primer, Programming Basics-->
+
+<!--You are required to submit this RMarkdown file showing your own notebook recordings of progress through the Primer activities of RStudio Cloud. The heading above is the name of the first primer **Visualisation Basics** and you should now open this primer at the link below in a new internet browser page because this will allow you to edit this RMarkdown document and save it as you progress.-->
+
+Example: The next 20 lines of this document give an example of this task. After reviewing how this has been done by the Unit coordinator please complete the remainder for the Primer headings provided.
+
+<!--Insert text comments like this: Using this format allows you to write whatever text you want that will not appear when you Knit the RMarkdown document to get your output (have a look after you have Knitted the document ... you can't see this text-->
+
+The following image is a screen capture from the Intro to the Visualization Basics primer, it's pretty informative so I inserted it here.
+
+![Visualisation Basics - Learning Objectives](VisualizationBasics.png)
+
+Using one of the inbuilt R datasets called mpg one of the first things we did was view the dataset by typing its name as R code. The dataset is included with the ggplot2 package of the Tidyverse suite of packages. To make sure ggplot2 was installed and loaded we might need to use install.packages("mpg") and library(mpg).
+
+```{r}
+library(ggplot2)
+mpg
+
+
+#Just typing data's name or a function's name will prompt R to explain it to you.
+
+#Insert code chunks like this where the primer instructions tell you to write and run code
+#Use the Hash here like you would in the Console or R Script to write something
+```
+
+Follow this link to see the result of pushing the "Knit" button, top left on this window:[http://rpubs.com/gregwhite25/592418](http://rpubs.com/gregwhite25/592418)
+
+
+<!--You need to continue your report for Programming Basics here ...-->
+
+
+### The Basics: Programming Basics
+
+
+
+<!--You need to continue your report for Programming Basics here ...-->
+
+
+
+
+
